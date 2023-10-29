@@ -106,13 +106,21 @@ const TodoList = () => {
                     checked={todo.completed}
                     onChange={() => dispatch(completeTodo(todo.id))}
                   />
-                  <label
-                    className="form-check-label text-white"
-                    style={{
-                      textDecoration: todo.completed ? "line-through" : "none",
-                    }}
-                  >
-                    {todo.text}
+                  {todo.value}
+                  {todo.completed && (
+                    <span
+                      className="form-check-label text-success fw-bolder px-2"
+                      style={{
+                        textDecoration: todo.completed
+                          ? "line-through"
+                          : "none",
+                      }}
+                    >
+                      {todo.text}
+                    </span>
+                  )}
+                  <label className="fw-bold px-1 text-primary">
+                    {todo.completed ? "sudah selesai" : todo.text}
                   </label>
                 </div>
                 <div className="col-auto flex-end">
