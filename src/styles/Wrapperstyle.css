@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+.gradient-custom {
+  background-color: #390202;
+  background-image: radial-gradient(
+      at 20% 37%,
+      hsla(268, 91%, 62%, 1) 0,
+      hsla(268, 91%, 62%, 0) 50%
+    ),
+    radial-gradient(at 54% 22%, rgb(0, 0, 0) 0, hsla(138, 85%, 58%, 0) 50%),
+    radial-gradient(at 85% 38%, rgb(25, 25, 25) 0, hsla(47, 94%, 65%, 0) 50%),
+    radial-gradient(
+      at 89% 69%,
+      hsla(243, 87%, 64%, 1) 0,
+      hsla(0, 0%, 0%, 0) 50%
+    ),
+    radial-gradient(
+      at 15% 2%,
+      hsla(288, 93%, 69%, 1) 0,
+      hsla(170, 100%, 46%, 0) 50%
+    ),
+    radial-gradient(
+      at 91% 53%,
+      hsla(352, 89%, 62%, 1) 0,
+      hsla(352, 89%, 62%, 0) 50%
+    ),
+    radial-gradient(at 37% 12%, rgb(61, 0, 230) 0, hsla(329, 91%, 57%, 0) 50%);
+}
