@@ -1,4 +1,3 @@
-import { Plus } from "react-bootstrap-icons";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";

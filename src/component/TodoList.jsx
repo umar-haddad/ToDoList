@@ -2,6 +2,7 @@ import { Trash } from "react-bootstrap-icons";
 import { PencilSquare } from "react-bootstrap-icons";
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import PropTypes from "prop-types"; // Import PropTypes
 import {
   removeTodo,
   editItem,
@@ -144,6 +145,33 @@ const TodoList = () => {
       </ul>
     </>
   );
+};
+
+TodoList.propTypes = {
+  editing: PropTypes.bool.isRequired,
+  todos: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      value: PropTypes.string.isRequired,
+      completed: PropTypes.bool.isRequired,
+    })
+  ).isRequired,
+};
+
+TodoList.defaultProps = {
+  editing: false,
+  todos: [
+    {
+      id: 1, 
+      value: "Example Task", 
+      completed: false, 
+    },
+    {
+      id: 2, 
+      value: "Another Task", 
+      completed: true, 
+    },
+  ],
 };
 
 export default TodoList;

@@ -18,7 +18,7 @@ const FilterButton = ({ todo, onSave, onCancel }) => {
   };
 
   return (
-    <from className="d-flex align-items-center w-100">
+    <form className="d-flex align-items-center w-100">
       <div className="row g-2 justify-content-between w-100">
         <div className="col-auto flex-start">
           <input
@@ -37,7 +37,7 @@ const FilterButton = ({ todo, onSave, onCancel }) => {
           </button>
         </div>
       </div>
-    </from>
+    </form>
   );
 };
 
