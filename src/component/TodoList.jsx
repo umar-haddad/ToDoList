@@ -132,7 +132,7 @@ const TodoList = () => {
                   </button>
                   <button
                     className="btn btn-light mx-1"
-                    onClick={() => dispatch(setEditing(todo.id, true))}
+                    onClick={() => setEditing(todo.id, true)}
                   >
                     <PencilSquare color="blue" />
                   </button>
